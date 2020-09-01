@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 import requests
-import json
+# import json
 import time
-import datetime
+# import datetime
 import turtle
 
 __author__ = """
@@ -50,7 +50,8 @@ def astro_graph():
     t.goto(float(astro_position()['longitude']),
            float(astro_position()['latitude']))
     t.shape('iss.gif')
-    # turtle.done() # uncomment it to see the actual map and ISS space-craft's location on the map
+    turtle.done()  # uncomment it to see the actual map and
+    # ISS space-craft's location on the map
 
 
 def astro_future(lon, lat):
